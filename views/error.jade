@@ -1,0 +1,9 @@
+extends layout
+
+block content
+div.panel.panel-heading
+  h1= error.status + ' ' + message
+  div.panel-body
+    pre #{error.stack}
+  div.panel-footer
+    section
