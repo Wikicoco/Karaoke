@@ -1,9 +1,10 @@
 extends layout
 
-block content
-div.panel.panel-heading
-  h1= error.status + ' ' + message
-  div.panel-body
-    pre #{error.stack}
-  div.panel-footer
-    section
+block container
+    div.container
+        div.panel
+            div.panel-heading
+                h1= error.status + ' ' + message
+            div.panel-body
+                pre #{error.stack}
+                a.btn.btn-danger.pull-right(href='../') Return

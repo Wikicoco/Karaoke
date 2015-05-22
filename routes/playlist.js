@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET playlist page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('playlist', { title: 'Playlist' });
 });
 
 module.exports = router;

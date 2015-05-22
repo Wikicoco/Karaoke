@@ -11,11 +11,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 //routes
-var routes = require('./routes/index');
+var index = require('./routes/index');
 var login = require('./routes/login');
 var playlist = require('./routes/playlist');
-var register = require('.routes/register');
-var reservation = require('.routes/reservation');
+var register = require('./routes/register');
+var reservation = require('./routes/reservation');
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', index);
 app.use('/login', login);
 app.use('/playlist', playlist);
 app.use('/register', register);
