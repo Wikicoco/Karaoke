@@ -1,22 +1,32 @@
 extends layout
 
 block container
-    div.row
-        div.col-md-3
-            div.panel.panel-Default
-                div.panel-heading
-                    h3.panel-title Pseudos
-                div.panel-body
-                    ul.list-group
-                        a.list-group-item JMB
-                        a.list-group-item.active MH
-        div.col-md-6
-            div.panel.panel-Default
-                div.panel-heading
-                    h3.panel-title Morceaux
-                div.panel-body
-        div.col-md-3
-            div.panel.panel-Default
-                div.panel-heading
-                    h3.panel-title Playlist
-                div.panel-body
+    section.row
+        div.col-lg-12
+            //UsersList
+            #userlist
+                div.col-md-2
+                    ul.nav.nav-pills.nav-stacked
+
+            //MorceauxList
+            #morceauxList
+                div.col-md-7
+                    h2.col-md-3 Morceaux
+                    table.display(cellspacing="0" width="100%")#morceaux
+                        thead
+                            th Title
+                            th Artist
+                            th Year
+                            th Duo
+                            th Usage
+                            th Styles
+                        tbody
+
+            //Playlist
+            #playlistList
+                div.col-md-3.pull-right
+                    h2=playlistof
+                        table.table.table-hover.table-responsive
+                            thead
+                                th Title
+                            tbody

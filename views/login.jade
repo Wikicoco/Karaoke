@@ -1,13 +1,15 @@
 extends layout
 
 block container
-    div.container
-        div.col-lg-5.col-lg-offset-3
+    section.container
+        div.col-md-5.col-md-offset-3
             div.panel.panel-info
                 div.panel-heading
-                    h1.col-lg-offset-5=title
+                    h1.col-md-offset-5=title
                 div.panel-body
-                    form.form-group(methode='POST', action='../login')
-                        input.form-control(type='text', placeholder='Username', required=true)
-                        input.form-control(type='password', placeholder='Password', required=true)
-                        input.form-control.btn.btn-primary(type='submit')
+                    form(methode='POST', action='../login')
+                        div.form-group
+                            input.form-control(type='text', placeholder='Username', required=true)
+                        div.form-group
+                            input.form-control(type='password', placeholder='Password', required=true)
+                        btn.form-control.btn.btn-primary(type='submit') Submit
