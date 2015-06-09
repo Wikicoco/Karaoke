@@ -2,6 +2,7 @@
  * Created by hotin on 26/05/15.
  */
 
+var userArray;
 
 // DOM Ready =============================================================
 $(document).ready(function() {
@@ -10,6 +11,7 @@ $(document).ready(function() {
     populateUsersTable();
     populateMorceauxTable();
     populatePlaylistTable();
+    //karafun();
 
 });
 
@@ -21,19 +23,23 @@ function populateUsersTable() {
     // Empty content string
     var ListContent = '';
 
-    ListContent += '<li class="h2">Psoeudo</li>';
+    //ListContent += '<li><a>Psoeudo</a></li>';
 
     // jQuery AJAX call for JSON
     $.getJSON( '/playlist/userslist', function( data ) {
 
+        userArray = data;
+
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
-            ListContent += '<li>' + this.username + '</li>';
+            ListContent += '<li id="' + this._id + '"><a>' + this.username + '</a></li>';
         });
 
         // Inject the whole content string into our existing HTML table
-        $('#userlist ul').html(ListContent);
+        $('#userlist').html(ListContent);
     });
+
+    SelectUser();
 };
 
 // Fill table with data
@@ -49,7 +55,9 @@ function populateMorceauxTable() {
         ajax: {
             "url":listJSON,
             "dataSrc": "",
-            "content": "jsonp"
+            "content": "jsonp",
+            "processing": true,
+            "serverSide": true
         },
         columns:[
             {"data":"Title"},
@@ -108,11 +116,14 @@ function populatePlaylistTable() {
 };
 
 
-///// Interaction
 
-$('#userlist > table > tbody > tr').click(function() {
-    // row was clicked
-    console.log('clicked');
-});
+// Interaction ============================================================
+
+function SelectUser(){
+    $('#userlist').on("click","li",function() {
+        // row was clicked
+
+    });
+}
 
 ///// DataTable Morceaux

@@ -78,5 +78,39 @@ app.use(function(err, req, res, next) {
     });
 });
 
+karafun();
+
+// Karafun
+function karafun(){
+    try{
+
+        var net = require('net');
+        var client = net.createConnection(57570, '192.168.1.100',
+            function(){
+                console.log('connect to server ws');
+                client.write('<action type="getCatalogList"></action>');
+            }
+        );
+
+        client.on('getCatalogList', function(data) {
+            console.log(data.toString());
+            client.end();
+        });
+
+        client.on('end', function(){
+            console.log('Disconnected from ws');
+        });
+
+/*        var socket = new WebSocket('ws://192.168.1.100:57570/');
+
+         socket.send('<action type="getStatus"></action>');
+
+         socket.onmessage(function() {alert(socket.message);});*/
+
+    }catch (e)
+    {
+        console.log('Err: '+e.message);
+    }
+}
 
 module.exports = app;

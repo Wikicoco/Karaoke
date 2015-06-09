@@ -1,32 +1,58 @@
 extends layout
 
 block container
-    section.row
+    div.row
         div.col-lg-12
-            //UsersList
-            #userlist
-                div.col-md-2
-                    ul.nav.nav-pills.nav-stacked
+            h1.page-header.text-center=eventName
+    div.row
+        div.col-lg-12
+            div.col-md-2
+                div.panel.panel-danger
+                    div.panel-heading
+                        h2
+                            i.glyphicon.glyphicon-user
+                            c=pseudo
+                    div.panel-body
+                        //UsersList
+                        ul.nav.navbar.side-nav#userlist
+            div.col-md-8
+                //MorceauxList
+                #morceauxList
+                    div.panel.panel-info
+                        div.panel-heading
+                            h2
+                                i.glyphicon.glyphicon-music
+                                c=karaoke
+                        div.panel-body
+                            table.display(cellspacing="0" width="100%")#morceaux
+                                thead
+                                    th Title
+                                    th Artist
+                                    th Year
+                                    th Duo
+                                    th Usage
+                                    th Styles
+                                tbody
+            div.col-md-2
+                //Playlist
+                #playlistList
+                    div.panel.panel-success
+                        div.panel-heading
+                            h2=playlistTitle
+                                i.glyphicon.glyphicon-pause
+                                h5=playlistof
+                        div.panel-body
+                    div.panel.panel-default
+                        div.panel-heading
+                            h2=enCours
+                                i.glyphicon.glyphicon-play
+                        div.panel-body
 
-            //MorceauxList
-            #morceauxList
-                div.col-md-7
-                    h2.col-md-3 Morceaux
-                    table.display(cellspacing="0" width="100%")#morceaux
-                        thead
-                            th Title
-                            th Artist
-                            th Year
-                            th Duo
-                            th Usage
-                            th Styles
-                        tbody
 
-            //Playlist
-            #playlistList
-                div.col-md-3.pull-right
+                //
                     h2=playlistof
-                        table.table.table-hover.table-responsive
-                            thead
-                                th Title
-                            tbody
+                    p
+                        h4 Title
+                    h2 Playlist en cours
+                    p
+                        h4 Title
