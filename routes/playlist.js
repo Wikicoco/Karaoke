@@ -4,14 +4,19 @@ var router = express.Router();
 ///Page
 /* GET playlist Page. */
 router.get('/', function(req, res, next) {
-    var playlistof = 'Pseudo';
-    var playlistTitle = 'Playlist ';
-    var enCours = 'En cours ';
-    var eventName = 'Event Title';
-    var title = 'Playlist';
-    var karaoke = ' Karaoke';
-    var pseudo = ' Pseudo';
-    res.render('playlist', { title: title, karaoke:karaoke, pseudo:pseudo , playlistof: playlistof, eventName:eventName , playlistTitle:playlistTitle, enCours:enCours });
+    var label= {
+        playlistof: 'Pseudo',
+        playlistTitle: 'Playlist ',
+        enCours: 'En cours ',
+        eventName: 'Event Title',
+        title: 'Playlist',
+        karaoke: ' Karaoke',
+        pseudo: ' Pseudo'
+    };
+
+
+
+    res.render('playlist', { title: label.title, karaoke:label.karaoke, pseudo:label.pseudo , playlistof: label.playlistof, eventName:label.eventName , playlistTitle:label.playlistTitle, enCours:label.enCours });
 });
 
 

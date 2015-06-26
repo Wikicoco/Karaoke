@@ -115,14 +115,31 @@ function populatePlaylistTable() {
     });
 };
 
+function karafun(){
+    try{
+        var socket = new WebSocket('ws://192.168.1.101:57570/');
 
+        socket.onopen = function(event){
+            socket.send('<action type="getStatus"></action>');
+        };
+
+        socket.onmessage = function(event) {
+            alert(event.data);
+            socket.close();
+        };
+
+    }catch (e)
+    {
+        alert('Err: '+e.message);
+        socket.close();
+    }
+}
 
 // Interaction ============================================================
 
 function SelectUser(){
     $('#userlist').on("click","li",function() {
         // row was clicked
-
     });
 }
 

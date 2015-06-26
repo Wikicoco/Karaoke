@@ -1,0 +1,188 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ws' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 silly cache add args [ 'ws', null ]
+5 verbose cache add spec ws
+6 silly cache add parsed spec { raw: 'ws',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'ws',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed ws@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'ws', range: '*', hasData: false }
+11 silly mapToRegistry name ws
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/ws
+15 verbose addNameRange registry:https://registry.npmjs.org/ws not in flight; fetching
+16 verbose get https://registry.npmjs.org/ws not expired, no request
+17 silly addNameRange number 2 { name: 'ws', range: '*', hasData: true }
+18 silly addNameRange versions [ 'ws',
+18 silly addNameRange   [ '0.2.6',
+18 silly addNameRange     '0.2.8',
+18 silly addNameRange     '0.2.9',
+18 silly addNameRange     '0.3.0',
+18 silly addNameRange     '0.3.1',
+18 silly addNameRange     '0.3.2',
+18 silly addNameRange     '0.3.3',
+18 silly addNameRange     '0.3.4',
+18 silly addNameRange     '0.3.4-2',
+18 silly addNameRange     '0.3.5',
+18 silly addNameRange     '0.3.5-2',
+18 silly addNameRange     '0.3.5-3',
+18 silly addNameRange     '0.3.5-4',
+18 silly addNameRange     '0.3.6',
+18 silly addNameRange     '0.3.7',
+18 silly addNameRange     '0.3.8',
+18 silly addNameRange     '0.3.9',
+18 silly addNameRange     '0.4.0',
+18 silly addNameRange     '0.4.1',
+18 silly addNameRange     '0.4.2',
+18 silly addNameRange     '0.4.3',
+18 silly addNameRange     '0.4.5',
+18 silly addNameRange     '0.4.6',
+18 silly addNameRange     '0.4.7',
+18 silly addNameRange     '0.4.8',
+18 silly addNameRange     '0.4.9',
+18 silly addNameRange     '0.4.10',
+18 silly addNameRange     '0.4.11',
+18 silly addNameRange     '0.4.12',
+18 silly addNameRange     '0.4.13',
+18 silly addNameRange     '0.4.14',
+18 silly addNameRange     '0.4.15',
+18 silly addNameRange     '0.4.16',
+18 silly addNameRange     '0.4.17',
+18 silly addNameRange     '0.4.18',
+18 silly addNameRange     '0.4.19',
+18 silly addNameRange     '0.4.20',
+18 silly addNameRange     '0.4.21',
+18 silly addNameRange     '0.4.22',
+18 silly addNameRange     '0.4.23',
+18 silly addNameRange     '0.4.24',
+18 silly addNameRange     '0.4.25',
+18 silly addNameRange     '0.4.27',
+18 silly addNameRange     '0.4.28',
+18 silly addNameRange     '0.4.29',
+18 silly addNameRange     '0.4.30',
+18 silly addNameRange     '0.4.31',
+18 silly addNameRange     '0.4.32',
+18 silly addNameRange     '0.5.0',
+18 silly addNameRange     '0.6.0',
+18 silly addNameRange     '0.6.1',
+18 silly addNameRange     '0.6.2',
+18 silly addNameRange     '0.6.3',
+18 silly addNameRange     '0.6.4',
+18 silly addNameRange     '0.6.5',
+18 silly addNameRange     '0.7.0',
+18 silly addNameRange     '0.7.1',
+18 silly addNameRange     '0.7.2' ] ]
+19 verbose addNamed ws@0.7.2
+20 silly addNamed semver.valid 0.7.2
+21 silly addNamed semver.validRange 0.7.2
+22 silly cache afterAdd ws@0.7.2
+23 verbose afterAdd /Users/hotin/.npm/ws/0.7.2/package/package.json not in flight; writing
+24 verbose afterAdd /Users/hotin/.npm/ws/0.7.2/package/package.json written
+25 silly install resolved [ { author:
+25 silly install resolved      { name: 'Einar Otto Stangvik',
+25 silly install resolved        email: 'einaros@gmail.com',
+25 silly install resolved        url: 'http://2x.io' },
+25 silly install resolved     name: 'ws',
+25 silly install resolved     description: 'simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455',
+25 silly install resolved     version: '0.7.2',
+25 silly install resolved     license: 'MIT',
+25 silly install resolved     keywords:
+25 silly install resolved      [ 'Hixie',
+25 silly install resolved        'HyBi',
+25 silly install resolved        'Push',
+25 silly install resolved        'RFC-6455',
+25 silly install resolved        'WebSocket',
+25 silly install resolved        'WebSockets',
+25 silly install resolved        'real-time' ],
+25 silly install resolved     repository: { type: 'git', url: 'git://github.com/websockets/ws.git' },
+25 silly install resolved     scripts: { test: 'make test' },
+25 silly install resolved     dependencies:
+25 silly install resolved      { options: '>=0.0.5',
+25 silly install resolved        ultron: '1.0.x',
+25 silly install resolved        bufferutil: '1.1.x',
+25 silly install resolved        'utf-8-validate': '1.1.x' },
+25 silly install resolved     optionalDependencies: { bufferutil: '1.1.x', 'utf-8-validate': '1.1.x' },
+25 silly install resolved     devDependencies:
+25 silly install resolved      { ansi: '0.3.x',
+25 silly install resolved        benchmark: '0.3.x',
+25 silly install resolved        'expect.js': '0.3.x',
+25 silly install resolved        mocha: '2.2.x',
+25 silly install resolved        should: '4.3.x',
+25 silly install resolved        tinycolor: '0.0.x' },
+25 silly install resolved     browser: './lib/browser.js',
+25 silly install resolved     component: { scripts: [Object] },
+25 silly install resolved     gypfile: true,
+25 silly install resolved     gitHead: '62c154c7ba97eaf6ac346f855af956c8b96f0ead',
+25 silly install resolved     bugs: { url: 'https://github.com/websockets/ws/issues' },
+25 silly install resolved     homepage: 'https://github.com/websockets/ws',
+25 silly install resolved     _id: 'ws@0.7.2',
+25 silly install resolved     _shasum: '438c560bdfa2b7da3dd5b6b46ed61325c24699d8',
+25 silly install resolved     _from: 'ws@*',
+25 silly install resolved     _npmVersion: '2.7.5',
+25 silly install resolved     _nodeVersion: '0.10.35',
+25 silly install resolved     _npmUser: { name: '3rdeden', email: 'npm@3rd-Eden.com' },
+25 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+25 silly install resolved     dist:
+25 silly install resolved      { shasum: '438c560bdfa2b7da3dd5b6b46ed61325c24699d8',
+25 silly install resolved        tarball: 'http://registry.npmjs.org/ws/-/ws-0.7.2.tgz' },
+25 silly install resolved     directories: {},
+25 silly install resolved     _resolved: 'https://registry.npmjs.org/ws/-/ws-0.7.2.tgz',
+25 silly install resolved     readme: 'ERROR: No README data found!' } ]
+26 info install ws@0.7.2 into /usr/local/lib
+27 info installOne ws@0.7.2
+28 verbose installOne of ws to /usr/local/lib not in flight; installing
+29 verbose lock using /Users/hotin/.npm/_locks/ws-19519ca15e983caf.lock for /usr/local/lib/node_modules/ws
+30 silly install write writing ws 0.7.2 to /usr/local/lib/node_modules/ws
+31 silly cache addNamed cb ws@0.7.2
+32 verbose unbuild lib/node_modules/ws
+33 silly gentlyRm /usr/local/lib/node_modules/ws is being purged from base /usr/local
+34 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ws
+35 verbose tar unpack /Users/hotin/.npm/ws/0.7.2/package.tgz
+36 verbose tar unpacking to /usr/local/lib/node_modules/ws
+37 silly gentlyRm /usr/local/lib/node_modules/ws is being purged
+38 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ws
+39 silly gunzTarPerm modes [ '755', '644' ]
+40 error tar.unpack untar error /Users/hotin/.npm/ws/0.7.2/package.tgz
+41 verbose unlock done using /Users/hotin/.npm/_locks/ws-19519ca15e983caf.lock for /usr/local/lib/node_modules/ws
+42 verbose fstream_path /usr/local/lib/node_modules/ws
+43 verbose fstream_type Directory
+44 verbose fstream_class DirWriter
+45 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ws'
+45 verbose stack     at Error (native)
+46 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+46 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+46 verbose fstream_stack FSReqWrap.oncomplete (fs.js:95:15)
+47 verbose cwd /Users/hotin/Developpement/JMB_Karaoke/Karaoke
+48 error Darwin 14.3.0
+49 error argv "node" "/usr/local/bin/npm" "install" "-g" "ws"
+50 error node v0.12.2
+51 error npm  v2.7.4
+52 error path /usr/local/lib/node_modules/ws
+53 error code EACCES
+54 error errno -13
+55 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ws'
+55 error     at Error (native)
+55 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ws']
+55 error   errno: -13,
+55 error   code: 'EACCES',
+55 error   path: '/usr/local/lib/node_modules/ws',
+55 error   fstream_type: 'Directory',
+55 error   fstream_path: '/usr/local/lib/node_modules/ws',
+55 error   fstream_class: 'DirWriter',
+55 error   fstream_stack:
+55 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+55 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+55 error      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+56 error Please try running this command again as root/Administrator.
+57 verbose exit [ -13, true ]
+58 verbose unbuild lib/node_modules/ws
+59 silly gentlyRm /usr/local/lib/node_modules/ws is being purged from base /usr/local
+60 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ws
